@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andyawake.github.io/Free-Anthropic/sitemap.xml

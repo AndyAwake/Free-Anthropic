@@ -1,0 +1,215 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><style>
+@page{size:A4;margin:21mm 18mm 21mm 18mm;@top-left{content:"ANDYAWAKE · OPEN FIELD GUIDE";font-family:"Noto Sans CJK SC";font-size:8px;color:#a0a3a0;letter-spacing:.11em}@top-right{content:"2026 / 11 / 14";font-family:"Noto Sans CJK SC";font-size:8px;color:#a0a3a0}@bottom-left{content:"ANDYAWAKE · 开源迁移与工作流手册";font-family:"Noto Sans CJK SC";font-size:8px;color:#888d89}@bottom-right{content:counter(page);font-family:"Noto Sans CJK SC";font-size:9px;color:#777}}
+@page:first{@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}html{font-family:"Noto Sans CJK SC",sans-serif;color:#161918;background:#fff}body{margin:0;font-size:10.5pt;line-height:1.85}a{color:#225674;text-decoration:none}p,li{orphans:3;widows:3}p{margin:0 0 9pt;color:#363c3a}strong{font-weight:700;color:#161817}.cover{height:250mm;position:relative;page-break-after:always}.cover-top{border-top:1.5px solid #222;padding-top:12mm;font-size:9pt;letter-spacing:.13em;color:#666}.cover-num{font-family:serif;font-size:118pt;color:#e4e5e2;position:absolute;top:44mm;right:0;line-height:1}.cover-title{position:absolute;top:75mm;left:0;right:0;font-family:"Noto Serif CJK SC",serif;font-size:29pt;letter-spacing:-.06em;line-height:1.42;font-weight:650}.cover-sub{position:absolute;top:132mm;left:0;right:0;color:#5f6663;font-size:12pt;max-width:140mm;line-height:2}.cover-bottom{position:absolute;bottom:21mm;left:0;right:0;border-top:1px solid #d5d7d2;padding-top:8mm;display:flex;justify-content:space-between;color:#616965;font-size:9pt}.small{font-size:9pt;color:#747974}.chapter-toc{page-break-after:always}.chapter-toc h1{font-family:"Noto Serif CJK SC",serif;font-size:23pt;margin:12mm 0 6mm}.toc-line{display:flex;justify-content:space-between;gap:10mm;border-bottom:1px solid #e3e5e1;font-size:10pt;padding:2.6mm 0}.toc-line span:last-child{font-family:Georgia,serif;color:#9b9f99}.toc-intro{color:#646b68;font-size:9pt;line-height:1.8;margin:5mm 0 11mm}.pdf-content h2{font-family:"Noto Serif CJK SC",serif;color:#111;letter-spacing:-.03em;font-size:17pt;line-height:1.38;font-weight:660;border-top:1px solid #d5d8d3;padding-top:8mm;margin:13mm 0 5mm;break-after:avoid}.pdf-content h2:first-child{margin-top:0}.pdf-content h3{font-size:12.5pt;margin:6mm 0 3mm;break-after:avoid}.pdf-content p,.pdf-content li{font-size:10pt;line-height:1.9}.pdf-content ul,.pdf-content ol{padding-left:7mm;margin:3mm 0 6mm}.pdf-content li{margin:1.4mm 0}.pdf-content blockquote{border-left:2px solid #b8bcb5;background:#f8f9f7;padding:3mm 4mm;margin:5mm 0}.pdf-content blockquote p{color:#5c625d;font-size:9pt;margin:0}.pdf-content pre{font-family:"Noto Sans Mono CJK SC",monospace;font-size:8pt;line-height:1.58;white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f7f5;border:1px solid #e0e3df;padding:4mm;margin:4mm 0 7mm}code{font-family:"Noto Sans Mono CJK SC",monospace;font-size:8.5pt;overflow-wrap:anywhere}.pdf-content table{width:100%;border-collapse:collapse;margin:4mm 0 7mm;font-size:8pt;table-layout:fixed}.pdf-content th{background:#f4f5f2;border-top:1px solid #d7dad6;color:#343a37;text-align:left;padding:2.2mm 1.5mm;overflow-wrap:anywhere}.pdf-content td{border-bottom:1px solid #e4e6e3;padding:2mm 1.5mm;vertical-align:top;overflow-wrap:anywhere}.table-scroller{max-width:100%}.table-scroller table{break-inside:auto}.table-scroller tr{break-inside:avoid}.last-note{margin-top:9mm;padding:5mm 0;border-top:1px solid #ddd;font-size:9pt;color:#696f6b}
+</style></head><body><section class="cover"><div class="cover-top">ANDYAWAKE　/　FIND YOUR ALTERNATIVE / KEEP YOUR RESULTS</div><div class="cover-num">02</div><div class="cover-title">换一个 AI，工作照样继续。<p style="font-family:'Noto Sans CJK SC';font-size:11pt;font-weight:400;letter-spacing:0;color:#919894;margin-top:7mm">Free-Anthropic · 全文可打印编辑版</p></div><div class="cover-sub">从 Claude 用户熟悉的任务出发：写作、Projects、Claude Code、文档、Agent 和 API。按实际可用性、交付效果与成本找到新工作台。</div><div class="cover-bottom"><span>AI 酋长 Andy / 星觉科技<br>公开研究 · 方法 · 模板</span><span>2026.11.14 · V4.0<br>公司：www.a6no1.cn · 微信 AIPMAndy</span></div></section><section class="chapter-toc"><p class="overline">CONTENTS</p><h1>阅读目录</h1><p class="toc-intro">这份 PDF 收录网站的完整章节，不是缩写版导读。查阅动态规则和价格，请以原始来源与最新官方公告为准。所有示例均区分真实个人经验、教学演示和未验证结果。</p><div class="toc-line"><span>01｜第一眼：我从 Claude 迁过来，应该用哪个？</span><span>01</span></div><div class="toc-line"><span>02｜先讲结论：选工作流，不是选一个聊天窗口</span><span>02</span></div><div class="toc-line"><span>03｜先看六类常见任务</span><span>03</span></div><div class="toc-line"><span>04｜工具选择的七个必要条件</span><span>04</span></div><div class="toc-line"><span>05｜中国用户从哪里开始：不要混淆应用与 API</span><span>05</span></div><div class="toc-line"><span>06｜把一项任务拆成六步</span><span>06</span></div><div class="toc-line"><span>07｜可直接复制的总提示词</span><span>07</span></div><div class="toc-line"><span>08｜专题一：写作和内容分发的可复用流程</span><span>08</span></div><div class="toc-line"><span>09｜专题二：表格分析，最容易发生“看上去合理”的错误</span><span>09</span></div><div class="toc-line"><span>10｜专题三：网站和小程序，验收的是可运行能力</span><span>10</span></div><div class="toc-line"><span>11｜专题四：AI 产品演示视频，把真实感留给真实操作</span><span>11</span></div><div class="toc-line"><span>12｜专题五：把 AI 工作流变成可交付的小项目</span><span>12</span></div><div class="toc-line"><span>13｜关联开源工具：不是越多越好</span><span>13</span></div><div class="toc-line"><span>14｜第三方可选开源栈与许可证边界</span><span>14</span></div><div class="toc-line"><span>15｜不丢掉 Claude 的长处：跨工具复用 8 类工作资产</span><span>15</span></div><div class="toc-line"><span>16｜成本公式：低价不是唯一目标</span><span>16</span></div><div class="toc-line"><span>17｜七天起步：能复用，比炫技更值钱</span><span>17</span></div><div class="toc-line"><span>18｜一个合格的成果包应该长什么样</span><span>18</span></div><div class="toc-line"><span>19｜自然连接到星觉科技</span><span>19</span></div><div class="toc-line"><span>20｜官方入口与核验资料</span><span>20</span></div><div class="last-note">开源：github.com/AndyAwake/Free-Anthropic<br>公司：www.a6no1.cn · 作者：metaver.vip · 微信：AIPMAndy</div></section><main class="pdf-content"><blockquote>
+<p><strong>Free-Anthropic · V4.0 / 2026-11-14 / AndyAwake × 星觉科技</strong><br />
+这里的 Free 是选择自由，不代表所有工具不收费。本指南面向中国普通用户和团队，以实际任务、可检查成品与真实成本决定工具，而不是靠单次聊天“谁更聪明”。</p>
+</blockquote>
+<h2 id="chapter-01">01｜第一眼：我从 Claude 迁过来，应该用哪个？</h2>
+<p>先按任务分流，不搞一张没有证据的「谁最强」排行榜。<strong>聊天/写作</strong>先用可用的轻量助手试一段真实需求；<strong>Claude Code</strong> 用户先将 Git 源码和工程约束搬出来，再用 Codex 或可用的执行工作台做一次可运行修改；<strong>Projects/知识库</strong> 用户先做清理后的交接卡；<strong>需要离线</strong>的团队先审查设备与本地模型许可。</p>
+<p><a href="ALTERNATIVE-MATRIX.md">按场景看完整平替矩阵</a> · <a href="https://github.com/AndyAwake/Out-Anthropic/blob/main/CLAUDE-CODE-MIGRATION.md">Claude Code 迁移工程教程</a> · <a href="https://github.com/AndyAwake/Anti-Anthropic/blob/main/PORTABLE-CLAUDE.md">能力移植方法论</a></p>
+<p>本网站提供一个按任务推荐<strong>首轮试用路线</strong>的工具选择器，选择不需要登录或上传任何素材。推荐只是尝试顺序，不代表你所在地区、账号和套餐必然可用。</p>
+<hr />
+<h2 id="chapter-02">02｜先讲结论：选工作流，不是选一个聊天窗口</h2>
+<p>AI 替代失败通常不是“模型不会回答”，而是输出文件拿不走、真实模型看不清、费用失控、功能或地区不支持、换同事无法复现。你真正需要的是 <strong>输入 → 模型/工具 → 人工核验 → 可编辑成品 → 记录成本 → 下次可重跑</strong>。</p>
+<p>今天不必同时注册十款工具。用一份公开材料做一项真实任务；只有它能满足交付标准，才考虑第二款工具或者自动化。把未知写成“未测”，不编造评分、价格和收益。</p>
+<h2 id="chapter-03">03｜先看六类常见任务</h2>
+<div class="table-scroller"><table>
+<thead>
+<tr>
+  <th>场景</th>
+  <th>小白首轮路线</th>
+  <th>必须留下的成品</th>
+  <th>一句话验收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>公众号 / Threads 文章</td>
+  <td>国内可用助手 + 人工审校</td>
+  <td>Markdown / Word + 来源表</td>
+  <td>事实、语气、来源正确</td>
+</tr>
+<tr>
+  <td>学习和资料阅读</td>
+  <td>Kimi / 豆包等支持的入口</td>
+  <td>证据摘录表 + 摘要</td>
+  <td>能逐条找回原文</td>
+</tr>
+<tr>
+  <td>业务表格与分析</td>
+  <td>助手生成结构化数据 + Excel/WPS</td>
+  <td>CSV / XLSX + 公式说明</td>
+  <td>换人能复算</td>
+</tr>
+<tr>
+  <td>网站 / 编码</td>
+  <td>WorkBuddy 或 Codex 等受支持工具</td>
+  <td>源码 + README + 截图</td>
+  <td>能打开、有发布步骤</td>
+</tr>
+<tr>
+  <td>产品演示视频</td>
+  <td>真实产品 UI 录制 + 分镜 + 剪辑</td>
+  <td>素材、分镜、成片、授权记录</td>
+  <td>所见功能真实存在</td>
+</tr>
+<tr>
+  <td>AI+IP 获客</td>
+  <td>真实案例素材 + 内容模板 + 人工发布</td>
+  <td>内容包 + CTA + 线索台账</td>
+  <td>不捏造成交与转化</td>
+</tr>
+</tbody>
+</table></div>
+<p>“建议先试”不是所有地区、所有套餐均可用的保证。具体产品支持情况、文件功能和费用，必须在使用时查官方页面与账号实际入口。</p>
+<h2 id="chapter-04">04｜工具选择的七个必要条件</h2>
+<p>采用 <strong>7 维比较表</strong>，而不是“我觉得它厉害”：</p>
+<ol>
+<li><strong>能否使用</strong>：地区、账号、行业合规与必要权限。</li>
+<li><strong>输入能力</strong>：能读取你实际有权使用的文字、表格、图片或代码吗？</li>
+<li><strong>输出可带走</strong>：成品是否可编辑、可下载，能否复用？</li>
+<li><strong>准确与一致</strong>：重要事实是否能溯源？每次格式是否稳定？</li>
+<li><strong>真正的成本</strong>：订阅、API、运行、人工修正、审核和托管。</li>
+<li><strong>模型透明度</strong>：工作台实际使用哪个模型，是否有回退或路由？</li>
+<li><strong>可恢复性</strong>：账号异常后，资料和工作能否继续？</li>
+</ol>
+<p>一项工具哪怕第 4 项表现不错，如果第 1、3 或 7 项不过关，也不适合作为某类核心业务的唯一依赖。</p>
+<h2 id="chapter-05">05｜中国用户从哪里开始：不要混淆应用与 API</h2>
+<p><strong>豆包、Kimi：</strong> 适合先在网页或客户端完成明确的小任务。登录后粘贴自己有权使用的材料，先让它复述资料清单，再生成结果，最后复制或下载为本地文件。具体界面功能以账号实际显示为准。<a href="https://www.doubao.com/">豆包</a> · <a href="https://www.kimi.com/">Kimi</a>。</p>
+<p><strong>WorkBuddy：</strong> 工作台不等于固定模型。创建任务前记录选择器里的模型/模式；如果界面只显示 Auto 而没有真实后端记录，就标记“实际模型待核实”。指定有限的本地任务目录，避免让自动化接触不必要的文件。<a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model">模型选择文档</a>。</p>
+<p><strong>国内 API：</strong> 当任务已经标准化，才考虑火山方舟、Kimi 开放平台、阿里云百炼、DeepSeek 等对应官方 API。订阅、网页免费权益与 API 计费通常是不同产品，不要默认“开了会员 API 就免费”。</p>
+<p><strong>Gemini / OpenAI：</strong> 适合实际产品、账户和所在地区满足官方支持条件的用户，同题对照其文本、文档、编码等能力。不要在面向中国大陆读者的保姆级教程里暗示这些服务都可无条件直接使用，也不提供绕过地区限制的操作。</p>
+<h2 id="chapter-06">06｜把一项任务拆成六步</h2>
+<p><strong>Step 1：写需求卡。</strong> 写出“输入是什么、给谁看、交付什么格式、什么情况算失败”。</p>
+<p><strong>Step 2：固定公开原料。</strong> 初次比较尽量用公开资料。涉及客户内容须授权，并在适当环境下处理。</p>
+<p><strong>Step 3：先让模型确认理解。</strong> 要求它列出已读取的文件、关键约束、缺项和可能风险，不要立即生成漂亮成品。</p>
+<p><strong>Step 4：生成第一版。</strong> 将结果保存到 <code>output/v1</code>；哪怕模型答得好，也不算已经落地到文件。</p>
+<p><strong>Step 5：人工验收。</strong> 检查事实、格式、可运行性、授权、品牌和移动端显示。</p>
+<p><strong>Step 6：保存复用模板。</strong> 留下原料、提示词、最终成品、耗时、费用与改稿记录。另一工具可使用同一套输入再跑。</p>
+<h2 id="chapter-07">07｜可直接复制的总提示词</h2>
+<pre><code class="language-text">你是一位按交付标准工作的协作者。
+场景：[例如：把公开政策资料改写为读者友好的说明文]
+读者：[普通用户/企业客户/工程师]
+输入资料：[粘贴有权使用的资料；附来源与日期]
+必须保留：[事实、链接、术语、技术限制]
+不得出现：[编造结果、无法核实的数据、未授权信息]
+产物：[例如 1 篇 Markdown + 1 张 CSV 证据表]
+验收：
+1. 逐项列出引用来源；
+2. 明确区分事实、判断和未验证内容；
+3. 数字与单位可复核；
+4. 输出可保存为独立文件；
+5. 结束前列出仍需人工核验的 3 点。
+先复述你理解的任务，再开始。
+</code></pre>
+<h2 id="chapter-08">08｜专题一：写作和内容分发的可复用流程</h2>
+<p><strong>实际问题：</strong> 想用 AI 写一篇知识型公众号长文，后续分发到 Threads、X 等平台，但不能让“看起来很像 AI 写的”。</p>
+<p><strong>做法：</strong> 用原始事实与个人经历做素材；让模型先提文章主线，不要一次写到底；人工补充人物、时间、具体动作与证据；形成一篇可编辑 Markdown；再拆成不同平台的不同长度版本。</p>
+<p><strong>验收：</strong> 来源必须可点击、核心事实不变、不同平台文案不能捏造用户反馈，文章有读者能执行的下一步。把风格模版与修改记录保留在 Git 仓库或自己管理的文件夹。</p>
+<p><strong>Andy 实际工作方法：</strong> 我更偏好从具体经历或解决问题入手，而不是把热词堆在标题里。开源教程先交付能运行的资料、步骤和模板，再把长文内容分发。这是方法记录，不承诺某条内容能涨多少粉或成交多少单。</p>
+<h2 id="chapter-09">09｜专题二：表格分析，最容易发生“看上去合理”的错误</h2>
+<p>提示词应要求模型明确：字段定义、时间范围、单位、缺失值处理、公式和引用位置。对于百分比、增长率、占比，要分清“比例的数值”和表格内部百分比格式。CSV 需要实际保存，然后在 Excel/WPS 打开检验乱码与分隔符。</p>
+<p>交付至少包含四样东西：<strong>清洗后的表格、公式/口径、异常清单、最终解释</strong>。再让另一个工具或人工以相同数据重算关键数值。原仓库提供 <a href="https://github.com/AndyAwake/Free-Anthropic/blob/main/WORKFLOWS.md">WORKFLOWS.md</a> 的公开数据练习与 <code>selection.csv</code> 模板。</p>
+<h2 id="chapter-10">10｜专题三：网站和小程序，验收的是可运行能力</h2>
+<p>简单网页的初级路线：选定一个真实页面问题 → 记录界面和核心交互 → 生成 HTML/CSS/JS 或现有框架源码 → 本地打开 → 移动端测试 → 上传到 GitHub Pages。<strong>能给出代码不等于网站已经上线，能打开首页不等于下载、菜单和表单都通过。</strong></p>
+<p>开发时让 AI 限定文件修改范围、要求在最终答复中列出变更文件、命令和验证结果。不要把 Token、API Key 复制进浏览器端 JS；任何私有凭据只放服务端安全配置。</p>
+<h2 id="chapter-11">11｜专题四：AI 产品演示视频，把真实感留给真实操作</h2>
+<p><strong>Andy 的项目实践：</strong> 我在探索用 Gemini 网页版做演示画面、借助 Codex 或工作台生成分镜和可录制页面，并用 Andy Video Skill 等工程方法组织素材。真实的产品 UI 录制、连贯的操作步骤、证据画面和后期节奏，是商业宣传视频可信度的重要来源。</p>
+<p>建议流程：<strong>一页需求卡 → 5–8 个分镜 → 真实页面连续操作录制 → 核对字幕与事实 → 简洁旁白 → 成片验证</strong>。AI 可以辅助组织，但视频不得把未实现功能伪装成真实产品操作，也不能无授权地使用客户品牌素材。</p>
+<p>公开项目延伸：<a href="https://github.com/AIPMAndy/Andy-Video-Skill">Andy Video Skill</a>；这是作者的相关工具仓库，不代表本教程已经对其全部效果做过同题性能测评。</p>
+<h2 id="chapter-12">12｜专题五：把 AI 工作流变成可交付的小项目</h2>
+<p>以<strong>“修车阿江”</strong>为例，这是作者正在推进的真实本地业务内容项目；可公开表述的工作是围绕修车经验整理故障知识、人物经历与短视频栏目，而不是声称模型帮助门店获得了某个不存在的收入增长。</p>
+<p>可以把一次真实采访变成：带时间码的原始摘录 → 一条技术解释脚本 → 三个短标题 → 发布与复盘台账。关键证据仍来自专业人员审校。适合做“同任务多模型比较”，并计算节省的编辑时间，但<strong>只有实际记录过前后耗时，才可发布效果数据</strong>。</p>
+<p>类似地，企业 AI 获客可以从线索资料清洗、一页服务说明、内容分发清单开始，不要用 AI 生成虚构客户评价或假案例。</p>
+<h2 id="chapter-13">13｜关联开源工具：不是越多越好</h2>
+<div class="table-scroller"><table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th>适用场景</th>
+  <th>需要另行核对</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/FreeRedact">FreeRedact</a></td>
+  <td>发布截图前检查脱敏需求</td>
+  <td>实际处理范围、敏感信息残留</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/FreeCover">FreeCover</a></td>
+  <td>内容封面制作</td>
+  <td>生成效果、版权、尺寸</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/FreePhoto">FreePhoto</a></td>
+  <td>图像处理工作流</td>
+  <td>本地/云端执行及导出能力</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/Andy-Video-Skill">Andy Video Skill</a></td>
+  <td>视频制作工作方法</td>
+  <td>运行条件、素材授权</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/DNASkill">DNASkill</a></td>
+  <td>AI 长期记忆与项目上下文</td>
+  <td>私有数据是否被公开提交</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/AIPMAndy/FreeDocs">FreeDocs</a></td>
+  <td>文档、协作与迁移相关探索</td>
+  <td>当前 README、功能与依赖</td>
+</tr>
+</tbody>
+</table></div>
+<p>以上仓库可在 GitHub 打开，但不在这里虚构功能已全部验收、成本或社区采用量。统一原则是：先看原仓库 README 与许可证，再看它是否能解决你现在的一个问题。</p>
+<h2 id="chapter-14">14｜第三方可选开源栈与许可证边界</h2>
+<p><strong>Cherry Studio</strong>：多模型桌面入口；<strong>AnythingLLM</strong>：文档与知识工作空间；<strong>LibreChat</strong>：可自托管会话入口；<strong>Ollama</strong>：本地运行模型；<strong>Dify</strong>：工作流编排；<strong>Open WebUI</strong>：自托管网页入口。</p>
+<p>客户端的开源许可、服务端商业条款、模型权重许可证、付费 API 是四套可能不同的约束。Dify 与 Open WebUI 等项目还需要注意对应版本的附加条款。读者应打开各自官方仓库的 LICENSE，而不是一律当作 MIT。</p>
+<p>详细入口与核对说明在原项目 <a href="https://github.com/AndyAwake/Free-Anthropic/blob/main/OPEN-SOURCE.md">OPEN-SOURCE.md</a>。这里没有执行所有工具的安装与国内联网实测，也没有给出“性能排名”。</p>
+<h2 id="chapter-15">15｜不丢掉 Claude 的长处：跨工具复用 8 类工作资产</h2>
+<p>从 Claude 或 Claude Code 迁出不意味着放弃它值得学习的工作方法。要迁的是<strong>问题定义、项目上下文、Skills、MCP 权限说明、Agent 交接卡、测试与质量门禁、可编辑成品、恢复记录</strong>，而不只是把聊天窗口换成另一个窗口。</p>
+<p>例如同一个网站任务：沿用原来的需求、源码和移动端验收标准；Claude Code 用 <code>CLAUDE.md</code>，Codex 可以用 <code>AGENTS.md</code>，Gemini CLI 可以用 <code>GEMINI.md</code>。但各工具的加载范围、执行权限、Hooks 和对外连接不同，须实际确认行为而非认为文件名替换就等价。</p>
+<p>使用 <a href="https://github.com/AndyAwake/Out-Anthropic/blob/main/CLAUDE-CODE-MIGRATION.md">Claude 专项迁移教程</a> 保全资产；用 <a href="https://github.com/AndyAwake/Anti-Anthropic/blob/main/PORTABLE-CLAUDE.md">能力移植指南</a> 提炼规则；用 <a href="templates/WORKFLOW-CARD.md">可复制的工作流卡</a> 固定结果。建议从一个公开项目开始实验，避免把客户资料和密钥传入不适当的模型环境。</p>
+<hr />
+<h2 id="chapter-16">16｜成本公式：低价不是唯一目标</h2>
+<p>一个任务真实成本 = 模型订阅分摊 + API/素材/托管费用 + 人工审校/返工时间 × 工时成本 + 合规与运维成本。</p>
+<p>例如工具 A 每次生成便宜，但总要重写两遍；工具 B 付费稍高，却能得到可编辑成品。没有记录工时就不能得出哪一个成本更低。用 <strong><code>templates/task-evaluation.csv</code></strong> 记真实结果，至少跑三次不同输入；实验样本少时不要得出普遍性结论。</p>
+<p>对于准备做副业的人，<strong>先售卖一个清晰可交付的服务，而不是售卖“我会用 AI”</strong>。先定义客户输入、具体交付、修改次数、价格和验收，再决定什么工具最划算。</p>
+<h2 id="chapter-17">17｜七天起步：能复用，比炫技更值钱</h2>
+<p><strong>Day 1：</strong> 选一项困扰你很久的真实任务，写需求卡。<br />
+<strong>Day 2：</strong> 找到有授权的原料，列出事实来源。<br />
+<strong>Day 3：</strong> 用一个可用工具做第一版，保存独立文件。<br />
+<strong>Day 4：</strong> 人工验收，记录返工与问题。<br />
+<strong>Day 5：</strong> 换一个候选工具，用同一份原料重做。<br />
+<strong>Day 6：</strong> 比较真实成本、可编辑性与恢复难度。<br />
+<strong>Day 7：</strong> 把步骤写成下一次能直接复用的工作流，才考虑自动化。</p>
+<h2 id="chapter-18">18｜一个合格的成果包应该长什么样</h2>
+<pre><code class="language-text">my-ai-task/
+├── input/source.md           # 来源与许可
+├── input/brief.md            # 目标和验收
+├── output/final.md           # 主要成品
+├── output/attachments/       # 真实导出的附件
+├── evidence/fact-check.md    # 人工核查记录
+└── report.csv                # 耗时、费用、版本与结果
+</code></pre>
+<p>如果要交给客户，附上可编辑版本和一段“你今后怎么更新”的说明。<strong>一次演示做好不代表整个工作流稳定；工作流稳定不代表业务一定赚钱。</strong></p>
+<h2 id="chapter-19">19｜自然连接到星觉科技</h2>
+<p>我们把实际工作中能够复用的方法、模板和源码公开出来，是为了让个人和团队少走弯路。开源资料免费阅读；需要定制方案、企业 AI 获客、AI+IP 项目落地或陪跑，可以进一步访问 <a href="https://www.a6no1.cn/">星觉科技公司官网</a> 或查看 <a href="https://metaver.vip/">Andy 个人产品实践</a>。微信 <strong>AIPMAndy</strong>，建议带上一个具体问题来讨论，而不是只说“我想学 AI”。</p>
+<h2 id="chapter-20">20｜官方入口与核验资料</h2>
+<ol>
+<li><a href="https://www.doubao.com/">豆包官网</a></li>
+<li><a href="https://www.kimi.com/">Kimi 官网</a></li>
+<li><a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model">WorkBuddy 国内模型选择说明</a></li>
+<li><a href="https://api-docs.deepseek.com/zh-cn/">DeepSeek 官方 API 文档</a></li>
+<li><a href="https://help.aliyun.com/zh/model-studio/what-is-model-studio">阿里云百炼官方介绍</a></li>
+<li><a href="https://help.openai.com/en/articles/7947663-chatgpt-supported-countries">OpenAI ChatGPT 支持地区</a></li>
+<li><a href="https://support.google.com/gemini/answer/13575153?hl=zh-Hans">Google Gemini Web 支持地区</a></li>
+<li><a href="https://github.com/AndyAwake/Free-Anthropic/blob/main/WORKFLOWS.md">原仓库工作流教程</a></li>
+<li><a href="https://github.com/AndyAwake/Free-Anthropic/blob/main/OPEN-SOURCE.md">原仓库开源工具目录</a></li>
+</ol>
+<p><strong>资料复核日期 2026-11-14。</strong> 价格、免费额度、模型版本、账号权益、许可证和地区政策均可能变化；本文提供选择方法与核验步骤，不提供未经真实运行的性能排名或收入保证。</p>
+</main></body></html>
